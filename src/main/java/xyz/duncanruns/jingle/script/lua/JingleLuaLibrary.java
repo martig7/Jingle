@@ -106,6 +106,7 @@ class JingleLuaLibrary extends LuaLibrary {
     }
 
     @LuaDocumentation(description = "Sets the current Windows cursor speed.")
+    public void setCursorSpeed(int speed) {
         MouseUtil.setCursorSpeed(speed);
     }
 
