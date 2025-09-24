@@ -90,13 +90,22 @@ class JingleLuaLibrary extends LuaLibrary {
         Jingle.dumpMeasuringProjector();
     }
 
+    @LuaDocumentation(description = "Sets the any available thin projectors to be directly behind the instance, bringing it above everything except for the game itself.")
+    public void showThinProjector() {
+        Jingle.showThinProjector();
+    }
+
+    @LuaDocumentation(description = "Dumps the OBS thin projector to the bottom of the window Z order.")
+    public void dumpThinProjector() {
+        Jingle.dumpThinProjector();
+    }
+
     @LuaDocumentation(description = "Gets the current Windows cursor speed.")
     public int getCursorSpeed() {
         return MouseUtil.getCurrentCursorSpeed();
     }
 
     @LuaDocumentation(description = "Sets the current Windows cursor speed.")
-    public void setCursorSpeed(int speed) {
         MouseUtil.setCursorSpeed(speed);
     }
 
